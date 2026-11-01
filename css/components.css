@@ -843,3 +843,13 @@ textarea.form-input {
         justify-self: end;
       }
     }
+
+/* Diskret indgang til det interne system (intern.baraekko.dk) */
+.footer__intern {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__intern:hover {
+  text-decoration: underline;
+}
