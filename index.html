@@ -380,7 +380,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero__video-container">
-      <picture>
+      <picture data-indhold="forside.hero.billede">
         <source media="(max-width: 767px)" type="image/webp" srcset="billeder/facade-hero-mobil.webp">
         <source media="(max-width: 767px)" srcset="billeder/facade-hero-mobil.jpg">
         <source type="image/webp" srcset="billeder/facade-hero.webp">
@@ -396,7 +396,7 @@
     </div>
 
     <div class="hero__content">
-      <span class="hero__eyebrow">Aarhus C · Est. 2026</span>
+      <span data-indhold="forside.hero.undertitel" class="hero__eyebrow">Aarhus C · Est. 2026</span>
       <h1 class="hero__title">Bar Ækko</h1>
       <div class="hero__actions">
         <a href="menu.html" class="btn btn--primary">Se menukort</a>
@@ -444,13 +444,13 @@
       <div class="welcome__grid">
         <div class="welcome__text" data-animate="fade-up">
           <span class="eyebrow">Om Bar Ækko</span>
-          <h2 style="margin-top: var(--space-sm);">Et stamsted<br>i Aarhus C.</h2>
-          <p>Bar Ækko er skabt af tre kammerater med en fælles drøm: at lave et sted hvor mennesker mødes, hygger sig og nyder livet, uden ståhej.</p>
-          <p>Gode samtaler over en kop kaffe, en iskold fadøl, eller en velvalgt cocktail. Det er hele opskriften.</p>
+          <h2 data-indhold="forside.velkomst.titel" style="margin-top: var(--space-sm);">Et stamsted<br>i Aarhus C.</h2>
+          <p data-indhold="forside.velkomst.tekst1">Bar Ækko er skabt af tre kammerater med en fælles drøm: at lave et sted hvor mennesker mødes, hygger sig og nyder livet, uden ståhej.</p>
+          <p data-indhold="forside.velkomst.tekst2">Gode samtaler over en kop kaffe, en iskold fadøl, eller en velvalgt cocktail. Det er hele opskriften.</p>
           <a href="about.html" class="btn btn--outline" style="margin-top: var(--space-md);">Vores Historie</a>
         </div>
         <a href="about.html" class="welcome__image welcome__image--photo" data-animate="fade-up" aria-label="Læs historien om Bar Ækko">
-          <picture><source type="image/webp" srcset="billeder/om-os-1.webp"><img src="billeder/om-os-1.jpg" alt="Adam, Jacob og Jacob foran Bar Ækko på Vestergade 46" width="1800" height="1350" loading="lazy" decoding="async"></picture>
+          <picture data-indhold="forside.velkomst.billede"><source type="image/webp" srcset="billeder/om-os-1.webp"><img src="billeder/om-os-1.jpg" alt="Adam, Jacob og Jacob foran Bar Ækko på Vestergade 46" width="1800" height="1350" loading="lazy" decoding="async"></picture>
         </a>
       </div>
     </div>
@@ -462,13 +462,13 @@
     <div class="container">
       <div class="street__grid">
         <figure class="street__figure" data-animate="fade-up">
-          <picture><source type="image/webp" srcset="billeder/faerdig-1.webp"><img src="billeder/faerdig-1.jpg" alt="Bardisken med espressomaskine, kage på disken og barstole langs væggen" width="1600" height="1200" loading="lazy" decoding="async"></picture>
+          <picture data-indhold="forside.lokalet.billede1"><source type="image/webp" srcset="billeder/faerdig-1.webp"><img src="billeder/faerdig-1.jpg" alt="Bardisken med espressomaskine, kage på disken og barstole langs væggen" width="1600" height="1200" loading="lazy" decoding="async"></picture>
         </figure>
         <figure class="street__figure" data-animate="fade-up">
-          <picture><source type="image/webp" srcset="billeder/faerdig-2.webp"><img src="billeder/faerdig-2.jpg" alt="Forlokalet med grønne pendler, murstensvæg, vinhylde og planter" width="1600" height="1200" loading="lazy" decoding="async"></picture>
+          <picture data-indhold="forside.lokalet.billede2"><source type="image/webp" srcset="billeder/faerdig-2.webp"><img src="billeder/faerdig-2.jpg" alt="Forlokalet med grønne pendler, murstensvæg, vinhylde og planter" width="1600" height="1200" loading="lazy" decoding="async"></picture>
         </figure>
         <figure class="street__figure" data-animate="fade-up">
-          <picture><source type="image/webp" srcset="billeder/faerdig-3.webp"><img src="billeder/faerdig-3.jpg" alt="Det bagerste rum med mosaikborde, bænke langs murstensvæggen og vinhylde" width="1600" height="1200" loading="lazy" decoding="async"></picture>
+          <picture data-indhold="forside.lokalet.billede3"><source type="image/webp" srcset="billeder/faerdig-3.webp"><img src="billeder/faerdig-3.jpg" alt="Det bagerste rum med mosaikborde, bænke langs murstensvæggen og vinhylde" width="1600" height="1200" loading="lazy" decoding="async"></picture>
         </figure>
       </div>
       <figcaption class="street__caption" data-animate="fade-up">50 pladser indenfor og 30 på fortovet · Vestergade 46</figcaption>
@@ -481,7 +481,7 @@
       <div class="tasting__header" data-animate="fade-up">
         <div>
           <span class="eyebrow">Fra baren</span>
-          <h2 style="margin-top: var(--space-sm);">Kaffe om dagen.<br>Øl og vin til sent.</h2>
+          <h2 data-indhold="forside.baren.titel" style="margin-top: var(--space-sm);">Kaffe om dagen.<br>Øl og vin til sent.</h2>
         </div>
         <a href="menu.html" class="btn btn--outline">Se hele menukortet</a>
       </div>
@@ -536,8 +536,8 @@
       <div class="loyalty__grid">
         <div class="loyalty__text" data-animate="fade-up">
           <span class="eyebrow">Ækko Regulars</span>
-          <h2 class="loyalty__heading">Hver sjette kaffe<br>er på huset.</h2>
-          <p class="loyalty__body">Opret et gratis klippekort i din telefon. Du får et klip hver gang du køber en kaffe hos os — og den sjette giver vi.</p>
+          <h2 data-indhold="forside.klippekort.titel" class="loyalty__heading">Hver sjette kaffe<br>er på huset.</h2>
+          <p data-indhold="forside.klippekort.tekst" class="loyalty__body">Opret et gratis klippekort i din telefon. Du får et klip hver gang du køber en kaffe hos os — og den sjette giver vi.</p>
           <ul class="loyalty__perks">
             <li>Køb fem barista-kaffer, få den sjette gratis</li>
             <li>En lille overraskelse på din fødselsdag</li>
@@ -655,7 +655,7 @@
   <!-- Find os -->
   <section class="hours-band">
     <div class="container" data-animate="fade-up">
-      <h2>Find os.<br>Når du har lyst.</h2>
+      <h2 data-indhold="forside.findos.titel">Find os.<br>Når du har lyst.</h2>
       <p class="hours-band__address" style="margin-top: var(--space-md);">Vestergade 46 St. h · 8000 Aarhus C</p>
       <a href="aabningstider.html" class="btn btn--light" style="margin-top: var(--space-md);">Se åbningstider</a>
       <p class="hours-band__review">Har du besøgt os? <a href="https://g.page/r/CYvDees0ngCVEBM/review" target="_blank" rel="noopener noreferrer">Giv os en anmeldelse på Google</a></p>
@@ -758,6 +758,7 @@
   <script src="js/klippekort.js?v=1"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/indhold.js?v=1"></script>
   <script src="js/main.js?v=2"></script>
   <script src="js/hero-animation.js?v=2"></script>
   <script src="js/scroll-animations.js?v=2"></script>
