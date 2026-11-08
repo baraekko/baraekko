@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Åbningstider for Bar Ækko, Vestergade 46 i Aarhus C. Åbent hver dag fra klokken 10, til 22 i hverdagene og til midnat fredag og lørdag.">
+  <meta name="description" content="Åbningstider for Bar Ækko, Vestergade 46 i Aarhus C. Åbent tirsdag til søndag fra klokken 10, til 22 i hverdagene og til midnat fredag og lørdag. Lukket mandag.">
   <title>Åbningstider · Bar Ækko på Vestergade 46, Aarhus C</title>
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.baraekko.dk/aabningstider">
   <meta property="og:title" content="Åbningstider · Bar Ækko på Vestergade 46, Aarhus C">
-  <meta property="og:description" content="Åbningstider for Bar Ækko, Vestergade 46 i Aarhus C. Åbent hver dag fra klokken 10, til 22 i hverdagene og til midnat fredag og lørdag.">
+  <meta property="og:description" content="Åbningstider for Bar Ækko, Vestergade 46 i Aarhus C. Åbent tirsdag til søndag fra klokken 10, til 22 i hverdagene og til midnat fredag og lørdag. Lukket mandag.">
   <meta property="og:image" content="https://www.baraekko.dk/billeder/facade-hero.jpg">
   <meta property="og:locale" content="da_DK">
   <meta name="twitter:card" content="summary_large_image">
@@ -53,7 +53,6 @@
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
-          "Monday",
           "Tuesday",
           "Wednesday",
           "Thursday",
@@ -235,7 +234,7 @@
     <div class="container">
       <span class="eyebrow">Vestergade 46</span>
       <h1 class="page-header__title" style="margin-top: var(--space-sm);">Åbningstider.</h1>
-      <p class="page-header__subtitle">Vi har åbent hver dag fra klokken 10.</p>
+      <p class="page-header__subtitle">Vi har åbent tirsdag til søndag fra klokken 10.</p>
     </div>
   </header>
 
@@ -263,11 +262,20 @@
         <p class="hours-band__address">Kaffe fra 10, og åbent til byen lukker. Fra søndag gælder de faste tider igen.</p>
       </div>
 
+      <div class="hours-band hours-band--normal" id="saerligeTider" hidden>
+        <span class="hours-band__label">Særlige åbningstider</span>
+        <div class="hours-band__grid"></div>
+      </div>
+
       <div class="hours-band hours-band--normal" data-animate="fade-up">
         <span class="hours-band__label">Hver uge</span>
-        <div class="hours-band__grid">
+        <div class="hours-band__grid" id="ugensTider">
           <div class="hours-band__item">
-            <span class="hours-band__days">Mandag-Torsdag</span>
+            <span class="hours-band__days">Mandag</span>
+            <span class="hours-band__time">Lukket</span>
+          </div>
+          <div class="hours-band__item">
+            <span class="hours-band__days">Tirsdag-Torsdag</span>
             <span class="hours-band__time">10:00-22:00</span>
           </div>
           <div class="hours-band__item">
@@ -371,7 +379,7 @@
   <script src="js/besog.js?v=1"></script>
   <script src="js/main.js?v=2"></script>
   <script src="js/scroll-animations.js?v=2"></script>
-  <script src="js/status.js?v=3"></script>
+  <script src="js/status.js?v=4"></script>
   <script src="js/udloeb.js?v=2"></script>
 </body>
 </html>
